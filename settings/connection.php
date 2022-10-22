@@ -14,12 +14,11 @@ class Connection{
 	function connection(){
 
 		// connect to the database
-		$this->db = mysqli_connect(SERVER, HOSTNAME, PASSWORD, DATABASE);
-
+		$this->db = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 		// if there are errors, return false
 		if(mysqli_connect_errno()){
 			return false;
-		}
+		}mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
 		// else return true
 		return true;
