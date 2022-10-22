@@ -14,7 +14,7 @@ class Connection{
 	function connection(){
 
 		// connect to the database
-		$this->db = mysqli_connect(SERVER, HOSTNAME, PASSWORD, DATABASE);
+		$this->db = mysqli_connect(user, host, password, database);
 
 		// if there are errors, return false
 		if(mysqli_connect_errno()){
