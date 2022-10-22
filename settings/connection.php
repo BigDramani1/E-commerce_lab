@@ -18,7 +18,6 @@ class Connection{
 		// if there are errors, return false
 		if(mysqli_connect_errno()){
 			return false;
-		}mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
 		// else return true
 		return true;
