@@ -26,8 +26,7 @@ if(isset($_POST['submit'])){
         // calling the take_customer_info_controller function and adding a new customer
         $result = take_customer_info_controller($full_name, $email, $password, $country, $city, $contact);
         if($result === true) {
-            echo "<script>alert('Sign up was successful')</script>";
-            header("Location: ../login/login.php");
+            echo ("<script>alert('Sign up was successful'); window.location.href = '../index.php';</script>");
         }
         else{
             echo ("<script>alert('Error occurred! try again later'); window.location.href = '../login/register.php';</script>");
