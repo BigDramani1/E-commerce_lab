@@ -21,7 +21,7 @@ if(isset($_POST['submit'])){
             
             //check if the user is an admin; admin = 1, if the person is a customer = 2
             if ($_SESSION['user_role'] == 1){
-                header("Location: ../admin/admin.php");
+                header("Location: ../admin/brands.php");
             }
             
             if ($_SESSION['user_role'] == 2){

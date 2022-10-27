@@ -14,21 +14,36 @@
 
 								<div class="row" style="margin-top:60px; margin-left:20px;">
                                     <div class="col-sm" style="text-align:center">
-										<div class="card" style="width: 18rem;">
+										<div class="card" style="width: 28rem;">
 											<div class="card-body">
 										<h5 class="card-title">Task 2</h5>
+										<p>Customers Registry</p>
 										<button onclick="window.location.href='login/register.php';" class="btn btn-primary">Register </a></button>
 											</div>
 										</div>	
 									</div>	
 									<div class="col-sm"style="text-align:center">
-										<div class="card" style="width: 18rem;">
+										<div class="card" style="width: 28rem;">
 											<div class="card-body">
 										<h5 class="card-title">Task 3</h5>
+										<p>Customers login</p>
 										<button onclick="window.location.href='login/login.php';" class="btn btn-danger">Login </a></button>
 											</div>
 										</div>	
-									</div>					
+									</div>
+								</div>
+								<div class="row" style="margin-top:60px; margin-left:20px;">
+                                    <div class="col-sm" style="text-align:center">
+										<div class="card" style="width: 28rem;">
+											<div class="card-body">
+										<h5 class="card-title">Task 4</h5>
+										<p>Add and edit brand</p>
+										<p>Admin<br> username:admin@gmail.com password=Admin_123</p>
+										<button onclick="window.location.href='login/login.php';" class="btn btn-primary">Login </a></button>
+											</div>
+										</div>	
+									</div>	
+													
 
 	</body>
 
