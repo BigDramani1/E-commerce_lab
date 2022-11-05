@@ -36,8 +36,8 @@
                                     <div class="col-sm" style="text-align:center">
 										<div class="card" style="width: 28rem;">
 											<div class="card-body">
-										<h5 class="card-title">Task 4</h5>
-										<p>Add and edit brand</p>
+										<h5 class="card-title">Task 4-5</h5>
+										<p>Add/Edit Brand&Category</p>
 										<p>Admin<br> username:admin@gmail.com password=Admin_123</p>
 										<button onclick="window.location.href='login/login.php';" class="btn btn-primary">Login </a></button>
 											</div>
