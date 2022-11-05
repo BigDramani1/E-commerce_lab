@@ -3,18 +3,18 @@ require('../classes/product_class.php');
 
 
 //brand controllers
-function add_brand_controller($brand_name){
+function add_brand_controller($brandname){
     //create an instance of the Product class
     $brand_instance = new Product();
     //call the add_brand method from the product class
-    return $brand_instance->add_brand($brand_name);
+    return $brand_instance->add_brand($brandname);
 }
 
-function update_one_brand_controller($brand_id,$brand_name){
+function update_one_brand_controller($brand_id,$brandname){
     // create an instance of the Product class
     $brand_instance = new Product();
     // call the update_one_brand method from the product class
-    return $brand_instance->update_one_brand($brand_id,$brand_name);
+    return $brand_instance->update_one_brand($brand_id,$brandname);
 
 }
 
@@ -42,11 +42,11 @@ function select_all_brands_controller(){
 
 }
 
-function select_one_brandname_controller($brand_name){
+function select_one_brandname_controller($brandname){
      // create an instance of the Product class
      $brand_instance = new Product();
      // call the select_one_brandname method from the class
-     return $brand_instance->select_one_brandname($brand_name);
+     return $brand_instance->select_one_brandname($brandname);
  
 }
 
@@ -99,6 +99,16 @@ function select_one_categoryname_controller($category){
     return $category_instance->select_one_categoryname($category);
 }
 
+
+
+//product controllers
+function add_product_controller($product_cat, $product_brand, $product_title, $product_price, $product_desc, $product_image, $product_keywords){
+    // create an instance of the product class
+    $product_instance = new Product();
+    // call the add_product method form the product class
+    return $product_instance->add_product($product_cat, $product_brand, $product_title, $product_price, $product_desc, $product_image, $product_keywords);
+}
+
 function select_all_products_controller(){
     // create an instance of the product class
     $product_instance = new Product();
@@ -113,4 +123,17 @@ function select_one_product_controller($product_id){
     return $product_instance->select_one_product($product_id);
 }
 
+function update_one_product_controller($product_id, $product_cat, $product_brand, $product_title, $product_price, $product_desc, $product_image, $product_keywords){
+    //create an instance of the product class
+    $product_instance = new Product();
+    //call the update_one_product method from the class
+    return $product_instance-> update_one_product($product_id, $product_cat, $product_brand, $product_title, $product_price, $product_desc, $product_image, $product_keywords);
+}
+
+function delete_one_product_controller($product_id){
+    //create an instance of the product class
+   $product_instance = new Product();
+   //call the delete_one_product method from the class
+   return $product_instance-> delete_one_product($product_id);
+}
 

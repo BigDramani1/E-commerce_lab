@@ -1,12 +1,10 @@
 <?php
 require('../settings/core.php');
-check_login();
 if (check_permission() != 1) {
-
-  //redirect to store.php
-  header('Location: ../index.php');
-}
+    header('Location: ../index.php');
+  }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">

@@ -14,7 +14,7 @@ if(isset($_POST['addCategory'])){
     $existingCategory = $categoryInfo['cat_name']; 
 
 	if ($existingCategory) {
-        echo ("<script>alert('This category already exists. Please use a different name.'); window.location.href = '../admin/addcategory.php';</script>");		
+        echo ("<script>alert('The category already exists. Please use a different name.'); window.location.href = '../admin/addcategory.php';</script>");		
 	}
 
     else {

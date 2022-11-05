@@ -3,11 +3,9 @@ require('../settings/core.php');
 require('../controllers/product_controller.php');
 check_login();
 if (check_permission() != 1) {
-
-  //redirect to store.php
-  header('Location: ../index.php');
-}
-
+    header('Location: ../views/store.php');
+  
+  }
 ?>
 
 <!DOCTYPE html>
@@ -93,8 +91,6 @@ if (check_permission() != 1) {
                                             <tr>
                                                 <th>Category ID</th>
                                                 <th>Category Name</th>
-                                                <th>Action</th>
-                                                <th>Action</th>
                                         
                                             </tr>
                                         </thead>

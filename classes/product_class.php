@@ -77,6 +77,27 @@ function select_one_categoryname($category){
 }
 
 
+// products methods
+
+// add product method
+    function add_product($product_cat, $product_brand, $product_title, $product_price, $product_desc, $product_image, $product_keywords){
+
+		return $this->query("insert into products(product_cat, product_brand, product_title, product_price, product_desc, product_image, product_keywords) values('$product_cat', '$product_brand', '$product_title', '$product_price', '$product_desc', '$product_image','$product_keywords')");
+	}
+
+// update one product method
+    function update_one_product ($product_id, $product_cat, $product_brand, $product_title, $product_price, $product_desc, $product_image, $product_keywords) {
+        // return true or false
+        return $this->query("update products set product_cat = '$product_cat', product_brand = '$product_brand', product_title = '$product_title', product_price = '$product_price', product_desc = '$product_desc', product_image = '$product_image', product_keywords = '$product_keywords' where product_id = '$product_id'");
+
+    }
+
+//delete one product method
+
+    function delete_one_product($product_id){
+        //returns true or false
+        return $this->query("delete from products where product_id = '$product_id'");
+    }
 
 //select all products method
 //select all products and join with the brands table using an inner join on the brand_id 

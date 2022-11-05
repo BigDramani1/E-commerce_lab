@@ -2,12 +2,11 @@
 
 require('../Settings/core.php');
 require('../Controllers/product_controller.php');
-check_login();
 if (check_permission() != 1) {
+    header('Location: ../index.php');
+  }
+?>
 
-  //redirect to store.php
-  header('Location: ../index.php');
-}
 $category = select_one_category_controller($_GET['cat_id']);
  
 

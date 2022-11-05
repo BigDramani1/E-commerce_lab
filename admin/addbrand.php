@@ -1,13 +1,5 @@
 <?php
 require('../settings/core.php');
-check_login();
-if (check_permission() != 1) {
-
-  //redirect to store.php
-  header('Location: ../index.php');
-}
-
-
 ?>
 
 
@@ -86,9 +78,9 @@ if (check_permission() != 1) {
                                 <div class="basic-form">
                                     <form action="../actions/add_brand.php" method = "post">
                                         <div class="input-group mb-3">
-                                            <input type="text" class="form-control" name= "brand_name" required="required">
+                                            <input type="text" class="form-control" name= "brandname" required="required">
                                             <div class="input-group-append">
-                                                <button class="btn btn-outline-dark" name="add_brand" type="submit"  >Add Brand</button>
+                                                <button class="btn btn-outline-dark" name="addBrand" type="submit"  >Add Brand</button>
                                             </div>
                                         </div>
                                     </form>

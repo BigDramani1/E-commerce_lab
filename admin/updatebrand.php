@@ -2,13 +2,13 @@
 
 require('../settings/core.php');
 require('../controllers/product_controller.php');
-
 check_login();
 if (check_permission() != 1) {
-
   //redirect to store.php
-  header('Location: ../index.php');
+  header('Location: ../views/store.php');
+
 }
+
 $brand = select_one_brand_controller($_GET['brand_id']);
  
 

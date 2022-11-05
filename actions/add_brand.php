@@ -4,28 +4,26 @@ require('../settings/core.php');
 check_login();
 
 // check for a POST variable with the name 'addBrand'
-if(isset($_POST['add_brand'])){
+if(isset($_POST['addBrand'])){
 
     // retrieve the brand name from the form
-    $brand_name = $_POST['brand_name'];
+    $brandname = $_POST['brandname'];
 
-    $brandInfo = select_one_brandname_controller($brand_name);    
+    $brandInfo = select_one_brandname_controller($brandname);    
     $existingBrand = $brandInfo['brand_name']; 
     
     if ($existingBrand) {
-			echo ("<script>alert('The brand name already exists. Please use a different name.'); window.location.href = '../admin/addbrand.php';</script>");
+			echo ("<script>alert('The brand already exists! Please use another name'); window.location.href = '../admin/addbrand.php';</script>");
 		
 	}
    else{
 
-    $result = add_brand_controller($brand_name);
+    $result = add_brand_controller($brandname);
    
      header("Location: ../admin/brands.php"); 
 
    }
     
-
-
 }
 
 

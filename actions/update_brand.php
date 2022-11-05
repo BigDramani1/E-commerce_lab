@@ -8,10 +8,10 @@ if(isset($_POST['updateBrand'])){
  
     // retreive the brand data from the update form
     $brand_id = $_POST['brand_id'];
-    $brand_name = $_POST['brandname'];
+    $brandname = $_POST['brandname'];
    
     
-    $result = update_one_brand_controller($brand_id, $brand_name);
+    $result = update_one_brand_controller($brand_id, $brandname);
 
     if($result) {
 

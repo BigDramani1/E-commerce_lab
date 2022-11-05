@@ -10,22 +10,29 @@
 <div class="nk-sidebar">           
             <div class="nk-nav-scroll">
                 <ul class="metismenu" id="menu">
-                <li class="mega-menu mega-menu-sm">
-                        <span>Admin Dashboard</span>
+                    <a href="../login/logout.php"> <li class="nav-label">Logout</li></a>
+                    
+                    <li>
+                        <a class="" href="javascript:void()" aria-expanded="false">
+                            <span class="nav-text">Admin Dashboard</span>
+                            
+                        </a>
                     </li>
+
                     <li class="mega-menu mega-menu-sm">
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                            <i class="fa fa-shopping-bag"></i><span class="nav-text">Brands</span>
+                            <i class="icon-globe-alt menu-icon"></i><span class="nav-text">Brands</span>
                         </a>
                         <ul aria-expanded="false">
                             <li><a href="addbrand.php">Add Brand</a></li>
                             <li><a href="brands.php">View Brands</a></li>
                         </ul>
                     </li>
+
                     
                     <li class="mega-menu mega-menu-sm">
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                            <i class="fa fa-shopping-cart"></i><span class="nav-text">Categories</span>
+                            <i class="icon-globe-alt menu-icon"></i><span class="nav-text">Categories</span>
                         </a>
                         <ul aria-expanded="false">
                             <li><a href="addcategory.php">Add Cateogry</a></li>
@@ -33,8 +40,15 @@
                         </ul>
                     </li>
                     <li class="mega-menu mega-menu-sm">
-                        <a href="../login/logout.php">Log Out</a>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-globe-alt menu-icon"></i><span class="nav-text">Products</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="addproduct.php">Add Product</a></li>
+                            <li><a href="products.php"> View Products</a></li>
+                        </ul>
                     </li>
+
                 </ul> 
             </div>
         </div>    
