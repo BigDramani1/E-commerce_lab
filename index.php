@@ -36,15 +36,26 @@
                                     <div class="col-sm" style="text-align:center">
 										<div class="card" style="width: 28rem;">
 											<div class="card-body">
-										<h5 class="card-title">Task 4-5</h5>
-										<p>Add/Edit Brand&Category</p>
+										<h5 class="card-title">Task 4 - Task 6</h5>
+										<p>Add and edit brand</p>
 										<p>Admin<br> username:admin@gmail.com password=Admin_123</p>
 										<button onclick="window.location.href='login/login.php';" class="btn btn-primary">Login </a></button>
 											</div>
 										</div>	
 									</div>	
+									<div class="col-sm" style="text-align:center">
+										<div class="card" style="width: 28rem;">
+											<div class="card-body">
+										<h5 class="card-title">Task 7</h5>
+										<p>Adding to cart</p>
+										<p>Customer<br> username:test@gmail.com password=Test_123</p>
+										<p>The username and password is optional, you can create an account and login</p>
+										<button onclick="window.location.href='login/login.php';" class="btn btn-primary">Add </a></button>
+											</div>
+										</div>	
+									</div>	
+								
 													
-
 	</body>
 
 	</html>

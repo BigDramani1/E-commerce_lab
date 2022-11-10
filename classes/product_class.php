@@ -100,10 +100,7 @@ function select_one_categoryname($category){
     }
 
 //select all products method
-//select all products and join with the brands table using an inner join on the brand_id 
-//also do an inner join with the categories table on the cat_id
     function select_all_products (){
-        //returns true or false
         return $this->fetch("select * from products inner join brands on product_brand = brand_id inner join categories on product_cat = cat_id");
     }
 
@@ -115,15 +112,21 @@ function select_one_categoryname($category){
 
 //search products
 
-    function search_products($searchQuerry){
+    function search_products($search){
 
-        $sql = "select * from products WHERE product_title LIKE '%$searchQuerry%' OR product_keywords LIKE '%$searchQuerry%'";
+        $sql = "select * from products where product_title LIKE '%$search%' OR product_keywords LIKE '%$search%'";
 
         return $this->fetch($sql);
 
     }
+    // search products 
+function searching_product($searching){
+    return $this->query("SELECT * FROM products WHERE CONCAT(product_cat, product_brand, product_title, product_price, product_desc, product_keywords) 
+    LIKE '%$searching%'");
+}
 
     
 }
+
 
 ?>

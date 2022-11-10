@@ -5,7 +5,7 @@ require('../Controllers/product_controller.php');
 if (check_permission() != 1) {
     header('Location: ../index.php');
   }
-?>
+
 
 $category = select_one_category_controller($_GET['cat_id']);
  

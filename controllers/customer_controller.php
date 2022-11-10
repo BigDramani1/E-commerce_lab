@@ -16,4 +16,11 @@ function take_one_customer_email_controller($email){
     // call the select_one_customer method from the Customer class
     return $customer_instance->take_one_customer_email($email);
 }
+
+function select_one_item_controller($customer_id, $product_id){
+    //create an instance of the cart class
+    $cart_instance = new Cart();
+    //call the select_one_item method from the cart class
+    return $cart_instance->select_one_item($customer_id, $product_id);
+}
 ?>

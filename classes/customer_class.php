@@ -14,4 +14,5 @@ class Customer extends Connection{
 		return $this->fetchOne("select * from customer where customer_email='$email'");
 	}
 }
+
 ?>

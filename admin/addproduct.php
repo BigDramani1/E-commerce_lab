@@ -134,7 +134,7 @@ if (check_permission() != 1) {
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="product_image">Product image </label>
                                             <div class="col-lg-6">
-                                                <input type="file" class="form-control"  name="product_image" placeholder="Product image" required="required">
+                                                <input type="file" class="form-control"  name="product_image" placeholder="Product image" required="required" accept="image/*">
                                             </div>
                                         </div>
                                         <div class="form-group row">

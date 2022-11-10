@@ -26,5 +26,14 @@ if(isset($_POST['addProduct'])){
     }
 
 }
+// ///
+// if(isset($_GET['search'])){
+//     $searching = $_GET['search'];
+//     $result= searching_product_control($searching);
+//      if ($result){
+//         echo $result;
+//      }
+// }
 
-?>
+// ?>
+

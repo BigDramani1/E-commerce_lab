@@ -137,3 +137,11 @@ function delete_one_product_controller($product_id){
    return $product_instance-> delete_one_product($product_id);
 }
 
+//search products controller
+
+function search_products_controller($search){
+    // create an instance of the Product class
+    $product_instance = new Product();
+    // call the search_products method from the class
+    return $product_instance->search_products($search);
+}
