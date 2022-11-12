@@ -120,10 +120,10 @@ function select_one_categoryname($category){
 
     }
     // search products 
-function searching_product($searching){
-    return $this->query("SELECT * FROM products WHERE CONCAT(product_cat, product_brand, product_title, product_price, product_desc, product_keywords) 
-    LIKE '%$searching%'");
-}
+// function searching_product($searching){
+//     return $this->query("SELECT * FROM products WHERE CONCAT(product_cat, product_brand, product_title, product_price, product_desc, product_keywords) 
+//     LIKE '%$searching%'");
+// }
 
     
 }

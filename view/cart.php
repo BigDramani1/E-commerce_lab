@@ -17,13 +17,23 @@ check_login();
 
 <body>
     <h2 style='margin-bottom:50px; text-align:center;'>Adding to Cart</h2>
-    <h4>These are the products that were added to my database.</h4>
+    <h4 style="margin: bottom 20px; text-align:center;">These are the products that were added to my database</h4>
     <div class="container">
-    <div class="row">
-    <?php
-    $products = select_all_products_controller();
-    foreach ($products as $product) {
-        echo "
+        <form action="../actions/search.php" method="get">
+            <div class="row" style="margin-bottom:50px;">
+                <div class="col-md-6">
+                    <input class="form-control" type="search" name="querry" placeholder="Search">
+                </div>
+                <div class="col-md-6">
+                    <button type="submit" name="search" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <?php
+            $products = select_all_products_controller();
+            foreach ($products as $product) {
+                echo "
         <div class='col-md-6 col-lg-4 col-xl-3'>
         <input type='hidden' name='product_id' value={$product['product_id']}>
             <div class= 'card text-center  card-product'>
@@ -41,9 +51,10 @@ check_login();
         </div>
         
         ";
-    }
-    ?>
-    </div>
+            }
+            ?>
+
+        </div>
     </div>
 </body>
 

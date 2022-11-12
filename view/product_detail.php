@@ -22,10 +22,14 @@ $product = select_one_product_controller($_GET['product_id']);
             <img src="../images/products/<?php echo htmlentities($product['product_image']); ?>" class="card-img-top" alt="..." style="height:300px; width:300px">
         </div>
         <div class="col-lg-6">
+        <br>Brand:<?php echo "{$product['product_brand']}"; ?>
+        <br>Brand:<?php echo "{$product['product_cat']}"; ?>
         <br>Title:<?php echo "{$product['product_title']}"; ?>
         <br>Price:<?php echo" GHS{$product['product_price']}";?>
         <br>Description: <?php echo"{$product['product_desc']}"?>
         <form method = "post" action='../actions/add_to_cart.php'>
+        <label>Specify the quantity you want</label>
+        <input class="form-control" type="num" name="quantity" value="1">
 		<input type="hidden" name="product_id" value= <?php echo $product['product_id'] ?>>
         <br><button name = "add_cart" type = "submit" class='btn 
                   btn-success';>Add to cart</button>
