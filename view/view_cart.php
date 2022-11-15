@@ -6,7 +6,7 @@ check_login();
 $customer_id= $_SESSION['user_id'];
 $products = select_all_from_cart_controller($customer_id);
 $amount = total_amount_controller($customer_id);
- 
+
 ?>
 
 <!DOCTYPE html>
@@ -104,7 +104,7 @@ $amount = total_amount_controller($customer_id);
                     <td>
                         <a class='btn btn-warning' href='cart.php'>Continue Shopping</a>
                 </td>
-                <td><a class='btn btn-primary' href='#'>Proceed to checkout (This will be for payment)</a></td>
+                <td><a class='btn btn-primary' href='payment.php'>Proceed to Pay</a></td>
                     
                    
                           ";?>

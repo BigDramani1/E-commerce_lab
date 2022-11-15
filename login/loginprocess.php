@@ -18,9 +18,11 @@ if(isset($_POST['submit'])){
         if (password_verify($password, $customer_email['customer_pass'])){
             $_SESSION['user_id'] = $customer_email['customer_id'];
             $_SESSION['user_role'] = $customer_email['user_role'];
+            $_SESSION['customer_email'] = $customer_email['customer_email'];
             
             //check if the user is an admin; admin = 1, if the person is a customer = 2
             if ($_SESSION['user_role'] == 1){
+                
                 header("Location: ../admin/brands.php");
             }
             

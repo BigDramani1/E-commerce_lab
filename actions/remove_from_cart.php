@@ -15,7 +15,7 @@ if(isset($_GET['product_id'])){
 
     }
      else {
-        echo ("<script>alert('Could not remove the product from cart.'); window.location.href = '../views/cart.php';</script>");;
+        echo ("<script>alert('Could not remove the product from cart.'); window.location.href = '../view/cart.php';</script>");;
      }
 
 }

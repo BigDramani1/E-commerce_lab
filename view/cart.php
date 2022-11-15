@@ -2,7 +2,6 @@
 require('../settings/core.php');
 require('../controllers/product_controller.php');
 check_login();
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +17,10 @@ check_login();
 <body>
     <h2 style='margin-bottom:50px; text-align:center;'>Adding to Cart</h2>
     <h4 style="margin: bottom 20px; text-align:center;">These are the products that were added to my database</h4>
+    <div class="col-md-6" style="margin-bottom:30px">
+    <a href="view_cart.php" class="btn btn-danger" style=" margin-left:500px">View Cart</a>
+    </div>
+    
     <div class="container">
         <form action="../actions/search.php" method="get">
             <div class="row" style="margin-bottom:50px;">

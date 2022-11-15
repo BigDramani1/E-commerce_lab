@@ -37,6 +37,27 @@ class Cart extends Connection {
         return $this->fetchOne("SELECT SUM(products.product_price *cart.qty) as Amount FROM cart join products on (products.product_id = cart.p_id) where cart.c_id = '$customer_id'");
     }  
 
+  
+    function add_order($customer_id, $invoice_no, $order_date, $order_status){
+        return $this->query("insert into orders (customer_id, invoice_no, order_date, order_status) values('$customer_id','$invoice_no', '$order_date', '$order_status')");
+    }
+   
+    			
+    function add_order_details($order_id, $product_id, $quantity){
+        return $this->query("insert into orderdetails (order_id,product_id,	qty) values('$order_id','$product_id', '$quantity')");
+    }
+        
+    function get_recent_order(){
+        return $this ->fetchOne("SELECT MAX(order_id) as last_order from orders");
+    }
+
+    function add_payment ($amount, $customer_id, $order_id, $currency, $payment_date){
+        return $this->query("insert into payment(amt, customer_id, order_id, currency, payment_date) values('$amount', '$customer_id', '$order_id', '$currency', '$payment_date')");
+    }
+
+    function select_all_orderdetails(){
+        return $this->fetchOne("select * from orderdetails");
+    }
 }
 
 
