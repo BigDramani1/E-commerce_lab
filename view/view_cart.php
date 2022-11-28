@@ -121,7 +121,7 @@ $amount = total_amount_controller($customer_id);
               type:'POST',
               data:{
                   'pid':product.getAttribute('data-pid'),
-                  'cid':ptoduct.getAttribute('data-cid'),
+                  'cid':product.getAttribute('data-cid'),
                   'qty':product.value
               },
          
